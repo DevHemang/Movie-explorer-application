@@ -1,0 +1,122 @@
+/* Search Container */
+.search_container {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 10px auto;
+}
+
+.search_bar {
+  width: 100%;
+}
+
+/* Input Container */
+.search_input_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+
+.search_input_container:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.search_input_container:focus-within {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #f5c51878;
+}
+
+/* Input Field */
+.search_input {
+  width: 100%;
+  height: 54px;
+  padding: 0 56px 0 20px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.search_input::placeholder {
+  color: #99aabb;
+  opacity: 0.8;
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+/* Search Icon */
+.search_icon_container {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #99aabb;
+  transition: color 0.2s ease;
+}
+
+.search_icon {
+  font-size: 18px;
+}
+
+.search_input:focus + .search_icon_container {
+  color: #6a665d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .search_input {
+    height: 50px;
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .search_input {
+    height: 46px;
+    padding: 0 48px 0 16px;
+    font-size: 1rem;
+  }
+
+  .search_icon_container {
+    right: 14px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .search_icon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search_input {
+    height: 42px;
+    padding: 0 40px 0 14px;
+    font-size: 0.95rem;
+  }
+
+  .search_icon_container {
+    right: 12px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .search_icon {
+    font-size: 14px;
+  }
+} 

@@ -1,0 +1,56 @@
+.genre_filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.genre_button {
+  padding: 0.625rem 1.25rem;
+  border: 1px solid #2c3440;
+  border-radius: 4px;
+  background: transparent;
+  color: #99aabb;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.genre_button:hover {
+  background: #2c3440;
+  color: #851313;
+}
+
+.genre_button.selected {
+  background: #f5c518;
+  border-color: #f5c518;
+  color: #14181c;
+}
+
+.genre_button.selected:hover {
+  background: #f5c518;
+  border-color: #f5c518;
+}
+
+@media (max-width: 768px) {
+  .genre_filter {
+    gap: 0.5rem;
+  }
+
+  .genre_button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .genre_button {
+    padding: 0.4rem 0.875rem;
+    font-size: 0.85rem;
+  }
+} 
