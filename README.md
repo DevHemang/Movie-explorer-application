@@ -2,6 +2,10 @@
 
 A modern, responsive movie discovery platform built with Next.js and TMDB API. Browse popular movies, search for specific titles, and filter by genres.
 
+## Deployed On VERCEL:
+https://movie-explorer-application-git-main-devhemangs-projects.vercel.app
+
+
 ## Features
 
 - Browse popular movies with infinite scroll
